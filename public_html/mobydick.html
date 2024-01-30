@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <title>Joshua Ryan Knapp</title>
+  
+    <!-- Links to Google or Adobe fonts go here -->
+  
+    <link rel="stylesheet" href="https://use.typekit.net/ety7utc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load external style sheets. They should be in same folder as your HTML file -->
+    <!--  reset style goes first-->
+    <link rel="stylesheet" href="https://use.typekit.net/qmk7ute.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-site.css">
+  <script src="js/responsive-nav.js"></script>
+  <script type="text/javascript" src="js/sort.js"></script>
+  
+  </head>
+
+<body>
+
+
+  <header>
+    <nav class="sidebar">
+      <div id="top">
+       <div class="desktop">
+        <div class="titlework"><a href="index.html">
+            <h1>Joshua</h1>
+            <h1>Ryan</h1>
+            <h1>Knapp</h1>
+          </a>
+            <h6><a href="mailto:knappalachia@gmail.com">knappalachia<br>@gmail.com</a><br><br><a href="https://www.instagram.com/knappalachia/"
+                target="blank">@knappalachia</a><br>on Instagram<br></h6>
+        </div>
+      </div>
+      <div class="title mobile">
+        <h1>Joshua Ryan Knapp</h1>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+     
+<div class="base"><h5><a href="javascript:history.back()">← Back</a></h5></div>
+<div class="project">
+  <div class="info">
+  <h4>Moby-Dick</h4>
+<div class="extra">
+  <!-- <h5>140 stories of places, feelings, and men</h5> -->
+  <h5>112 pg.</h5>
+  <h5>6″ w.</h5>
+  <h5>9″ h.</h5>
+  <h5>2022</h5>
+</div>
+    <div class="caption">
+    <p><span class="pSC">An exercise in obsession,</span> rapid, experimental production, and economical self-publication. The full text of <span class="pitalic">Moby-Dick</span> was personally typeset, printed, overprinted on a risograph, and hand-bound in less than two weeks. Edition of 11.
+      </p>
+    </div></div>
+    <div class="images">
+      <img src="images/work/moby/moby-dick-1.jpg">
+      <img src="images/work/moby/moby-dick-3.jpg">
+      <img src="images/work/moby/moby-dick-4.jpg">
+      <img src="images/work/moby/moby-dick-5.jpg">
+      <img src="images/work/moby/moby-dick-2.jpg">
+</div>
+      <!-- <img src="images/work/moby/moby-dick-6.jpg"> -->
+
+      </div>
+      <div class="base basebottom"><h5><a href="javascript:history.back()">← Back</a></h5></div>
+      
+
+
+            <footer>
+        </div>
+        <div class="mobile foot">
+          <h6>knappalachia@gmail.com<br><br><a href="https://www.instagram.com/knappalachia/" target="blank">@knappalachia</a> on Instagram<br><br>©2024</h6>
+        </div>
+        <div class="colophon">
+        <p class="pfoot" >©2024 Joshua Ryan Knapp</p>
+        <p class="pfoot">This webpage is displaying Cormorant, designed by Christian Thalmann, and Georgia, designed by Matthew Carter.</p>
+      </div>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+      <script>   
+   width = 1;
+       
+       $(".project img").click(function(){
+         if(width == 1){
+           $(".project img").css("width","94vw");
+           $(".images").css("margin-left","3vw");
+           $(".sidebar").css("left","-15vw");
+           width=0;    
+           
+         }else if(width == 0){
+           $(".project img").css("width","100%");
+           $(".images").css("margin-left","calc(65px + 13vw)");
+           $(".sidebar").css("left","0");
+           width=1;    
+       }})  
+
+        $(document).ready(function() {
+                
+        $(window).resize(function(){
+        location.reload(true);
+        });
+        
+        $(window).resize(function(){
+        location.reload(true);
+        });
+
+          $(".project").css("opacity","1");
+          $(".project").css("margin-top","1vh");
+        });
+        </script>
+
+
+
+</body>
+
+</html>
