@@ -277,7 +277,7 @@
       overflow: hidden;
       border-right: 1px solid #242221;
       background-color: #dfdad4;
-      transition: all .7s ease;
+      transition: all .8s ease;
 
     }
 
@@ -295,6 +295,7 @@
     #top {
       position: relative;
       height: 25vh;
+      transition: all .8s ease;
       /* grid-area: "top"; */
 
     }
