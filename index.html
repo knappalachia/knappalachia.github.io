@@ -236,7 +236,12 @@
         }
 
 
-        
+        if ((windowSize > 1080)){
+          $(window).resize(function(){
+        location.reload(true);
+        });
+
+        }
         
        
         
@@ -280,13 +285,24 @@
           }
 
 
+
+          if ((windowSize < 768)){
+          if ((pageHeight - $(window).height() - distScrolled) <= 600) {
+            $(".footnote").css("opacity", "1");
+            $(".footnote").css("transform", "translateX(0%)");
+          } else if ((pageHeight - $(window).height() - distScrolled) >= 600) {
+            $(".footnote").css("opacity", "0");
+            $(".footnote").css("transform", "translateX(-5%)");
+          }
+        } else if ((windowSize > 768)){
           if ((pageHeight - $(window).height() - distScrolled) <= 450) {
             $(".footnote").css("opacity", "1");
             $(".footnote").css("transform", "translateX(0%)");
           } else if ((pageHeight - $(window).height() - distScrolled) >= 450) {
             $(".footnote").css("opacity", "0");
             $(".footnote").css("transform", "translateX(-5%)");
-          }
+          }}
+
 
         }); //end on scroll
 
