@@ -1,41 +1,31 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-       <title>Joshua Ryan Knapp</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <title>Joshua Ryan Knapp</title>
+     <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
   
-    <!-- Links to Google or Adobe fonts go here -->
-  
-    <link rel="stylesheet" href="https://use.typekit.net/ety7utc.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Load external style sheets. They should be in same folder as your HTML file -->
-    <!--  reset style goes first-->
-    <link rel="stylesheet" href="https://use.typekit.net/qmk7ute.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  
-  
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive-site.css">
-  <script src="js/responsive-nav.js"></script>
-  <script type="text/javascript" src="js/sort.js"></script>
-  
-  </head>
+  <!-- Load external style sheets. They should be in same folder as your HTML file -->
+  <!--  reset style goes first-->
+
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive-site.css">
+<script src="js/responsive-nav.js"></script>
+<script type="text/javascript" src="js/sort.js"></script>
+
+</head>
 
 <body>
 
 
   <header>
-    <nav class="sidebar">
+    <nav class="sidebar desktop">
       <div id="top">
-       <div class="desktop">
+
         <div class="titlework"><a href="index.html">
             <h1>Joshua</h1>
             <h1>Ryan</h1>
@@ -44,10 +34,7 @@
             <h6><a href="mailto:knappalachia@gmail.com">knappalachia<br>@gmail.com</a><br><br><a href="https://www.instagram.com/knappalachia/"
                 target="blank">@knappalachia</a><br>on Instagram<br></h6>
         </div>
-      </div>
-      <div class="title mobile">
-        <h1>Joshua Ryan Knapp</h1>
-      </div>
+
     </div>
     </nav>
   </header>
@@ -60,10 +47,15 @@
   <h4 class="withsub">The Books</h4>
   <h5 class="subtitle">A Survey of Bible Design</h5>
 <div class="extra">
+  <div class="desktop">
   <h5>144 pg.</h5>
   <h5>11.75″ w.</h5>
   <h5>8.5″ h.</h5>
   <h5>2022</h5>
+</div>
+  <div class="mobile">
+    <h5>144 pg. | 11.25″ w. | 8.5″ h. | 2022</h5>
+  </div>
 </div>
     <div class="caption">
     <p><span class="pSC">Part archive and part analysis</span> of the most widely distributed book in the world. 32 Bibles were compiled and uniformly documented, chosen based on their diversity of design features, audience, and purpose. Together, they serve as a snapshot of the continually shapeshifting form of the Christian Bible.
@@ -87,48 +79,48 @@
       
 
 
-            <footer>
-        </div>
-        <div class="mobile foot">
-          <h6>knappalachia@gmail.com<br><br><a href="https://www.instagram.com/knappalachia/" target="blank">@knappalachia</a> on Instagram<br><br>©2024</h6>
-        </div>
+      <footer>      
         <div class="colophon">
-        <p class="pfoot" >©2024 Joshua Ryan Knapp</p>
-        <p class="pfoot">This webpage is displaying Cormorant, designed by Christian Thalmann, and Georgia, designed by Matthew Carter.</p>
-      </div>
+          <div class="mobile foot">
+            <p class="pfoot"><a href="mailto:knappalachia@gmail.com">knappalachia@gmail.com</a><br><a href="https://www.instagram.com/knappalachia/"
+              target="blank">@knappalachia</a> on Instagram<br></p>
+          </div>
+          <p class="pfoot">©2024 Joshua Ryan Knapp</p>
+          <p class="pfoot">This webpage is displaying Cormorant, designed by Christian Thalmann, and Georgia, designed by
+            Matthew Carter.</p>
+        </div>
       </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>   
-    width = 1;
-       
-      $(".project img").click(function(){
-        if(width == 1){
-          $(".project img").css("width","94vw");
-          $(".images").css("margin-left","3vw");
-          $(".sidebar").css("left","-15vw");
-          width=0;    
-          
-        }else if(width == 0){
-          $(".project img").css("width","100%");
-          $(".images").css("margin-left","calc(65px + 13vw)");
-          $(".sidebar").css("left","0");
-          width=1;    
-      }})  
+    <script>
+      width = 1;
+      var windowSize = $(window).width();
+    
 
-      $(document).ready(function() {
+      if ((windowSize > 768)){
+    $(".project img").click(function(){
+      if(width == 1){
+        $(".project img").css("width","94vw");
+        $(".images").css("margin-left","3vw");
+        $(".sidebar").css("left","-15vw");
+        width=0;    
+        
+      }else if(width == 0){
+        $(".project img").css("width","100%");
+        $(".images").css("margin-left","calc(65px + 13vw)");
+        $(".sidebar").css("left","0");
+        width=1;    
+    }})  }
+   
+   $(document).ready(function() {
+   
+    
 
-      
-        $(window).resize(function(){
-        location.reload(true);
-        });
-
-        $(".project").css("opacity","1");
-        $(".project").css("margin-top","1vh");
-      });
-
-      </script>
+     $(".project").css("opacity","1");
+     $(".project").css("margin-top","1vh");
+   });
+   </script>
 
 </body>
 
