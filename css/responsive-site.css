@@ -25,8 +25,7 @@
     }
 
     h4{
-      /* font-family: Sprat-Regular, serif; */
-      font-size: 2rem;
+      font-size: 3rem;
       width: 95%;
       padding-top: 7%;
       padding-bottom: 5%;
@@ -51,21 +50,9 @@
       text-align: left;
       font-size: 1.1rem;
       line-height: 1.2rem;
-      /* word-break: break-word; */
     }
 
-    .sidebar{
-      width: 100%;
-      overflow: hidden;
-      height: 10%;
-      position: fixed;
-      padding-top: 0px;
-      margin-top: 0px;
-      border-right: none;
-      border-bottom: 1px solid #242221;
-
-      
-    }
+  
 
     .pfoot a{
       color: #242221;
@@ -80,14 +67,11 @@
       margin-top: 10vh;
     }
 
-    /* footer{
-      height: 125px
-    } */
 
     #greet{
       margin-left: 5%;
       width: 90%;
-      
+
     }
 
 
@@ -110,23 +94,7 @@
       
     }
 
-    /* .info{
-      margin-top: 3%;
-      position: static;
-      width: 50%;
-      float: right;
-    
-    } */
-
-    /* .foot{
-      padding: 5%;
-      width: 90%;
-      margin-top: 15%;
-      border-top: 1px solid #393fac;
-      padding-bottom: 15%;
-    } */
-
-
+  
 
 
 
@@ -230,6 +198,25 @@
     .footnote{
       width: 90%;
       margin-left: 5%;
+    }
+
+    .project{
+      width: 100%;
+    }
+
+    .images{
+      margin-left: 0%;
+    }
+
+    .info{
+      margin-left: 5%;
+      width: 90%;
+    }
+
+    .extra{
+      float: none;
+      width: 90%;
+      padding-bottom: 0%;
     }
 
     /* ------------------------------------HOME------------------------------------------- */
