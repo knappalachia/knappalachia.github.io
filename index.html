@@ -26,7 +26,6 @@
   <link rel="stylesheet" type="text/css" href="css/lightbox.css">
   <link rel="stylesheet" type="text/css" href="css/responsive-site.css">
   <script src="js/responsive-nav.js"></script>
-  <script type="text/javascript" src="js/sort.js"></script>
 
 </head>
 
@@ -204,6 +203,7 @@
     <script>
       var distScrolled;
       var i = 1;
+      
       $(document).ready(function () {
 
      
@@ -220,20 +220,33 @@
           }
           // console.log(i);
         }, 0)
-
-
+        
+        var windowSize = $(window).width();
 
         $("#greet").css("opacity", "1");
-        $("#greet").css("margin-top", "23vh");
         $("#main").css("opacity", "1");
-        $("#main").css("margin-top", "13vh");
+
+        if ((windowSize < 768)){
+          $("#greet").css("margin-top", "15vh");
+          $("#main").css("margin-top", "8vh");
+        } else if ((windowSize > 768)){
+          $("#greet").css("margin-top", "23vh");
+          $("#main").css("margin-top", "13vh");
+
+        }
 
 
+        
+        
+       
+        
+
+ 
         var pageHeight = $(document).height();
         console.log(pageHeight);
         $("#debug #text0-val").text($(window).height());
         $("#debug #text1-val").text(pageHeight);
-
+        
 
         // When the page scrolls, do stuff
         $(document).on("scroll", function () {
@@ -266,13 +279,6 @@
             $("#galleryall").css("transform", "translateX(-3%)");
           }
 
-          if (distScrolled > 3300) {
-            $("#contacthead").css("opacity", "1");
-            $("#contacthead").css("transform", "translateX(0%)");
-          } else if (distScrolled <= 3300) {
-            $("#contacthead").css("opacity", "0");
-            $("#contacthead").css("transform", "translateX(-3%)");
-          }
 
           if ((pageHeight - $(window).height() - distScrolled) <= 450) {
             $(".footnote").css("opacity", "1");
