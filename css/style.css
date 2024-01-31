@@ -242,12 +242,10 @@
       padding-top: 5%;
       padding-bottom: 0%;
       opacity: 0;
-      transition: all .8s ease;
+      
     }
 
     footer {
-      /* margin-top: 20vh; */
-      /* height: 5vh; */
       margin-bottom: 2%;
     }
 
@@ -255,7 +253,7 @@
       margin-left: calc(65px + 13vw);
       width: 65vw;
       opacity: 0;
-      transition: all 1s ease;
+      transition: transform .8s, opacity .8s ease;
       position: relative;
       margin-top: 20vh;
     }
@@ -277,7 +275,6 @@
       overflow: hidden;
       border-right: 1px solid #242221;
       background-color: #dfdad4;
-      transition: all .8s ease;
 
     }
 
@@ -295,8 +292,6 @@
     #top {
       position: relative;
       height: 25vh;
-      transition: all .8s ease;
-      /* grid-area: "top"; */
 
     }
 
@@ -307,7 +302,7 @@
       top: 45vh;
       left: 9vw;
       opacity: 0;
-      transition: all 1s ease;
+      transition: top 1s, opacity 1s ease;
       user-select: none;
     }
 
@@ -315,7 +310,7 @@
       position: absolute;
       top: 15%;
       width: 13.5vw;
-      transition: all .8s ease;
+      transition: top .8s, opacity .8s ease;
       opacity: 0;
     }
 
@@ -332,7 +327,7 @@
       padding-top: 5%;
       padding-bottom: 0%;
       opacity: 0;
-      transition: all .8s ease;
+      transition: transform .8s, opacity .8s ease;
     }
 
 
@@ -343,10 +338,9 @@
 
     #greet {
       opacity: 0;
-      margin-top: 0;
-      transition: all 1.4s ease;
       margin-top: 50vh;
-      /* padding-right: 5%; */
+      transition: margin-top 1.4s, opacity 1.4s ease;
+       /* padding-right: 5%; */
       margin-left: calc(65px + 13vw);
       width: 65vw;
       user-select: none;
@@ -384,7 +378,7 @@
       /* position: relative; */
       margin-left: calc(65px + 13vw);
       width: 100%;
-      transition:all .7s ease;
+      /* transition:all .7s ease; */
     }
 
     .info{
@@ -434,7 +428,7 @@
       margin-left: calc(65px + 13vw);
       width: 65vw;
       position: relative;
-      transition: all 2.5s ease;
+      transition: opacity 2.5s, margin-top 2.5s ease;
       /* top:2%; */
       opacity: 0;
     }
@@ -456,22 +450,6 @@
       /* box-shadow: 0px 0px 5px #918077; */
     }
 
-    .contact {
-      margin-top: 7%;
-    }
-
-    #contacthead {
-      padding-bottom: 2%;
-    }
-
-    .project {
-      margin-top: 8vh;
-      width: 65vw;
-      position: relative;
-      transition: all .8s ease;
-      opacity: 0;
-
-    }
 
 
     .normal {
@@ -592,50 +570,3 @@
       height: 75vh;
     }
 
-
-
-    input[type=text],
-    select,
-    textarea {
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 1rem;
-      width: 73%;
-      /* Full width */
-      padding: 12px;
-      /* Some padding */
-      /* box-sizing: border-box; Make sure that padding and width stays in place */
-      /* margin-top: 6px; Add a top margin */
-      margin-bottom: 16px;
-      /* Bottom margin */
-      /* resize: vertical; Allow the user to vertically resize the textarea (not horizontally) */
-      resize: none;
-      background-color: #dfdad4;
-      border: none;
-      border-bottom: 1px solid #242221;
-    }
-
-    input[type=text]:focus,
-    select:focus,
-    textarea:focus {
-      /* border: none; */
-      outline: 1px solid #242221;
-      border: none;
-
-
-    }
-
-    /* Style the submit button with a specific background color etc */
-    input[type=submit] {
-      background-color: #242221;
-      font-size: 1rem;
-      color: white;
-      padding: 15px 30px;
-      border: none;
-      cursor: pointer;
-      transition: all .2s ease;
-    }
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-      background-color: #534f4c;
-    }
