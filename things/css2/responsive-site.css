@@ -20,9 +20,6 @@
       transform: none;
   }
 
-  img.reg.active {
-    transform: scaleX(105%) scaleY(95%) skewX(3deg) skewY(3deg);
-  }
 
   #grid{
     width: 10vw;
