@@ -1,13 +1,6 @@
 
 @media only screen and (max-width: 768px) {
 
-  body {
-    overflow: visible;
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    touch-action: auto;
-}
-
  #showcase{
       margin: 20vh auto;
       width: 80%;
@@ -20,6 +13,9 @@
       transform: none;
   }
 
+  img.reg.active {
+    transform: scaleX(105%) scaleY(95%) skewX(3deg) skewY(3deg);
+  }
 
   #grid{
     width: 10vw;
