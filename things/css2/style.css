@@ -62,7 +62,7 @@ body{
     left: 5vh;
     opacity: 40%;
     transition: all .4s ease;
-    z-index: 1;
+    z-index: 999;
 }
 
 #single:hover{
@@ -198,4 +198,13 @@ img.reg.active {
 .play-pause:active{
     cursor: pointer;
     transform: skew(-20deg) scale(110%);
+}
+
+#grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem 5rem;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 7vh;
 }
