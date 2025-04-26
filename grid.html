@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things I Own That I Love</title>
+
+    <link href="things/css2/reset.css" rel="stylesheet">
+    <link href="things/css2/style.css" rel="stylesheet" type="text/css">
+    <link href="things/css2/responsive-site.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            overflow: visible;
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+            touch-action: auto;
+        }
+
+        #grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 3rem 5rem;
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 7vh;
+        }
+
+        .images {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            position: relative;
+            overflow: visible;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            /* border: 1px solid red; */
+        }
+
+        .images img.reg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.2s ease-in-out;
+        }
+
+
+        .reg:hover{
+            transform: scaleX(110%) scaleY(90%);
+        }
+
+        img.reg.active {
+            transform: scaleX(110%) scaleY(90%) skewX(8deg) skewY(8deg);
+        }
+
+        .shadow{
+            display: none;
+        }
+
+        .play-pause{
+            display: none;
+        }
+
+        #bg{
+         position: fixed;   
+        background-image: linear-gradient(white, rgb(210, 210, 210));
+         top: 0vh;
+         height: 100vh;
+        }    
+    </style>
+</head>
+<body>
+    <a href="things.html"><div id="single"></div></a>
+    <div id="bg"></div>
+    <div id="grid-view">
+    
+        <div class="item">
+            <div class="images">
+            <img src="things/images/watch1.PNG" data-audio="watch1" class="reg" draggable="false">
+            <img src="things/images/watch1.png" class="shadow">
+        </div>
+            <audio id="watch1" src="things/audio/Black teapot.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/teapot1.png" data-audio="teapot1" class="reg" draggable="false">
+            <img src="things/images/teapot1.png" class="shadow">
+            </div>
+            <audio id="teapot1" src="things/audio/Black teapot.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/teapot2.PNG" data-audio="fishteapot" class="reg" draggable="false">
+            <img src="things/images/teapot2.PNG" class="shadow">
+            </div>
+            <audio id="fishteapot" src="things/audio/Fish teapot.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause">⏵︎</button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/wailord.PNG" data-audio="wailord" class="reg" draggable="false">
+            <img src="things/images/wailord.PNG" class="shadow">
+            </div>
+            <audio id="wailord" src="things/audio/Wailord.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/pillows.PNG" data-audio="pillows" class="reg" draggable="false">
+            <img src="things/images/pillows.PNG" class="shadow">
+            </div>
+            <audio id="pillows" src="things/audio/Pillows.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/lamp1.PNG" data-audio="lamp1" class="reg" draggable="false">
+            <img src="things/images/lamp1.PNG" class="shadow">
+            </div>
+            <audio id="lamp1" src="things/audio/Floor lamp.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/car.PNG" data-audio="car" class="reg" draggable="false">
+            <img src="things/images/car.PNG" class="shadow">
+            </div>
+            <audio id="car" src="things/audio/Car.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/cards.PNG" data-audio="cards" class="reg" draggable="false">
+            <img src="things/images/cards.PNG" class="shadow">
+            </div>
+            <audio id="cards" src="things/audio/Cards.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause">⏵︎</button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/catbus.PNG" data-audio="catbus" class="reg" draggable="false">
+            <img src="things/images/catbus.PNG" class="shadow">
+            </div>
+            <audio id="catbus" src="things/audio/Catbus.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/controller.PNG" data-audio="controller" class="reg" draggable="false">
+            <img src="things/images/controller.PNG" class="shadow">
+            </div>
+            <audio id="controller" src="things/audio/Controller.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/couch.PNG" data-audio="couch" class="reg" draggable="false">
+            <img src="things/images/couch.PNG" class="shadow">
+            </div>
+            <audio id="couch" src="things/audio/Couch.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/ghast.PNG" data-audio="ghast" class="reg" draggable="false">
+            <img src="things/images/ghast.PNG" class="shadow">
+            </div>
+            <audio id="ghast" src="things/audio/Ghast.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/hat1.PNG" data-audio="coney" class="reg" draggable="false">
+            <img src="things/images/hat1.PNG" class="shadow">
+            </div>
+            <audio id="coney" src="things/audio/Coney.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/hoodie1.PNG" data-audio="hoodie1" class="reg" draggable="false">
+            <img src="things/images/hoodie1.PNG" class="shadow">
+            </div>
+            <audio id="hoodie1" src="things/audio/Houndstooth hoodie.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/jacket1.PNG" data-audio="jacket1" class="reg" draggable="false">
+            <img src="things/images/jacket1.PNG" class="shadow">
+            </div>
+            <audio id="jacket1" src="things/audio/Car.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/shirt1.PNG" data-audio="shirt1" class="reg" draggable="false">
+            <img src="things/images/shirt1.PNG" class="shadow">
+            </div>
+            <audio id="shirt1" src="things/audio/Flower shirt.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/shoes1.PNG" data-audio="vans" class="reg" draggable="false">
+            <img src="things/images/shoes1.PNG" class="shadow">
+            </div>
+            <audio id="vans" src="things/audio/Vans.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/painting1.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/painting1.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/airfryer.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/airfryer.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/backpack.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/backpack.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/begonia.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/begonia.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/boldandbrash.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/boldandbrash.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/bolo.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/bolo.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/book1.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/book1.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/book2.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/book2.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/boots.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/boots.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/chair.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/chair.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/degree.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/degree.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/flowers.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/flowers.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/glasses.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/glasses.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/glassesholder.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/glassesholder.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/headphones.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/headphones.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/painting2.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/painting2.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/painting3.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/painting3.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/phoneholder.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/phoneholder.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/tie.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/tie.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/kettle.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/kettle.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/laptop.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/laptop.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/mug1.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/mug1.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/mug2.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/mug2.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/ornament.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/ornament.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+        <div class="item">
+            <div class="images">
+            <img src="things/images/layton.PNG" data-audio="painting1" class="reg" draggable="false">
+            <img src="things/images/layton.PNG" class="shadow">
+            </div>
+            <audio id="painting1" src="things/audio/Painting1.m4a"></audio>
+            <div class="controls">
+                <button class="play-pause"></button>
+                </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll(".item");
+            const allAudios = document.querySelectorAll("audio");
+    
+            items.forEach(item => {
+                const img = item.querySelector("img.reg");
+                const audioId = img.getAttribute("data-audio");
+                const audio = document.getElementById(audioId);
+    
+                img.addEventListener("click", function () {
+                    // Pause all other audio elements
+                    allAudios.forEach(a => {
+                        if (a !== audio) {
+                            a.pause();
+                            a.currentTime = 0;
+                        }
+                    });
+    
+                    // Toggle play/pause for the clicked audio
+                    if (audio.paused) {
+                        audio.play();
+                    } else {
+                        audio.pause();
+                        audio.currentTime = 0;
+                    }
+    
+                    // Animation class
+                    img.classList.add("active");
+                    setTimeout(() => {
+                        img.classList.remove("active");
+                    }, 100);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
