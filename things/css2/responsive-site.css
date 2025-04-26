@@ -1,6 +1,13 @@
 
 @media only screen and (max-width: 768px) {
 
+  body {
+    overflow: visible;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    touch-action: auto;
+}
+
  #showcase{
       margin: 20vh auto;
       width: 80%;
