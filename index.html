@@ -116,6 +116,14 @@
       
     </div>
 
+    <div class="footnote">
+      <p class="pfoot">* <span class="pitalic">Biblical scholarship</span> as in the varied academic disciplines of
+        Biblical criticism and research; not a personal, religious study of the Christian or Hebrew Bible.</p>
+        <p class="pfoot">† <span class="pitalic">Collection</span> as in the assembly, arrangement, and re-presentation of content and materials; archiving, anthologizing, compiling.
+        <p class="pfoot">‡ <span class="pitalic">Obsession</span> as in an intense fixation on and passion for something; a positive, creative force; not addiction.</p>
+        
+
+    </div>
 
     <footer>
 
@@ -211,6 +219,24 @@
             $("#galleryall").css("transform", "translateX(-3%)");
           }
 
+
+
+          if ((windowSize < 768)){
+          if ((pageHeight - $(window).height() - distScrolled) <= 800) {
+            $(".footnote").css("opacity", "1");
+            $(".footnote").css("transform", "translateX(0%)");
+          } else if ((pageHeight - $(window).height() - distScrolled) >= 800) {
+            $(".footnote").css("opacity", "0");
+            $(".footnote").css("transform", "translateX(-5%)");
+          }
+        } else if ((windowSize > 768)){
+          if ((pageHeight - $(window).height() - distScrolled) <= 450) {
+            $(".footnote").css("opacity", "1");
+            $(".footnote").css("transform", "translateX(0%)");
+          } else if ((pageHeight - $(window).height() - distScrolled) >= 450) {
+            $(".footnote").css("opacity", "0");
+            $(".footnote").css("transform", "translateX(-5%)");
+          }}
 
 
         }); //end on scroll
