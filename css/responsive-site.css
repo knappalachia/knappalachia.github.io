@@ -2,12 +2,12 @@
 @media only screen and (max-width: 850px) {
 
 h2{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
 }
 
 h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -20,8 +20,8 @@ h6{
 }
 
 p{
-    font-size: 1.3rem;
-      line-height: 2.2rem;
+    font-size: 1rem;
+      line-height: 2rem;
 }
 
 #main{
@@ -39,8 +39,9 @@ p{
 }
 
 .ptitle{
-      padding-top: 12rem;
-    margin-bottom: 4rem;
+      padding-top: 10rem;
+    margin-bottom: 0rem;
+    scale: 80%;
 }
 
 .bg{
@@ -54,10 +55,13 @@ p{
 #whale{
     padding-top: 12rem;
     margin-bottom: 4rem;
+          width: 50%;
+
 }
 
 #foot{
     margin-top: 6rem;
+    margin-bottom: 7rem;
 }
 
 .projects{
@@ -68,7 +72,6 @@ p{
   opacity: 1;
   filter: saturate(1);
 }
-
 
 
 
