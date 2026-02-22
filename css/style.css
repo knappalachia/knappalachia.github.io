@@ -6,6 +6,50 @@
 
 }
 
+#animatedBackground {
+    width: 100%;
+    height: 100vh; /* Viewport height, or set a specific height in px */
+    position: absolute; /* Position it relative to the viewport/parent */
+    top: 0;
+    left: 0;
+    background: url('../images/work/triune/tri-full-2.jpg'); /* Replace with your image path */
+    background-repeat: repeat-x; /* Repeat horizontally */
+    background-size: auto 100%; /* Adjust size as needed, e.g., 'auto 100%' or 'cover' */
+    mix-blend-mode: multiply;
+    animation: animatedBackground 300s linear infinite; /* Adjust duration (20s) for speed */
+}
+
+#animatedBackground2 {
+    width: 100%;
+    height: 100vh; /* Viewport height, or set a specific height in px */
+    position: absolute; /* Position it relative to the viewport/parent */
+    top: 0;
+    background: url('../images/work/triune/tri-full-2.jpg'); /* Replace with your image path */
+    background-repeat: repeat-x; /* Repeat horizontally */
+    background-size: auto 100%; /* Adjust size as needed, e.g., 'auto 100%' or 'cover' */
+    mix-blend-mode: multiply;
+    animation: animatedBackground2 300s linear infinite; /* Adjust duration (20s) for speed */
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0; /* Starting position */
+    }
+    to {
+        background-position: -100% 0; /* Moves one full image width to the left */
+    }
+}
+
+@keyframes animatedBackground2 {
+    from {
+        background-position: 0 0; /* Starting position */
+    }
+    to {
+        background-position: 200% 0; /* Moves one full image width to the left */
+    }
+}
+
+
 
 html{
     font-size: 16px;
@@ -68,6 +112,7 @@ h4{
   font-style: normal;
   text-align: center;
   color: rgb(135, 130, 128);
+  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -154,9 +199,11 @@ width: 100%;
 }
 
 #whale{
-  width: 60%;
+  width: 55%;
   height: auto;
-  margin: 6vw auto;
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 
 }
 
@@ -204,7 +251,7 @@ background-image: linear-gradient(to bottom, rgb(232, 231, 226), rgb(0,0,0,0));
 
 #foot{
   margin: 0 auto;
-  margin-top: 6vw;
+  margin-top: 3rem;
   width: 80%;
 }
 

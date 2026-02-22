@@ -53,7 +53,7 @@ p{
 }
 
 #whale{
-    padding-top: 12rem;
+    padding-top: 10rem;
     margin-bottom: 4rem;
           width: 50%;
 
@@ -61,7 +61,7 @@ p{
 
 #foot{
     margin-top: 6rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .projects{
