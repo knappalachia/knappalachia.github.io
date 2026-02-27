@@ -2,12 +2,13 @@
 @media only screen and (max-width: 850px) {
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 3rem;
 }
 
 h3{
-    font-size: 1.1rem;
+    margin-bottom: .7rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -22,6 +23,10 @@ h6{
 p{
     font-size: 1rem;
       line-height: 2rem;
+}
+
+#all{
+    display: none;
 }
 
 #main{
@@ -53,19 +58,26 @@ p{
 }
 
 #whale{
-    padding-top: 10rem;
+    padding-top: 7rem;
     margin-bottom: 4rem;
           width: 50%;
 
 }
 
 #foot{
-    margin-top: 6rem;
+    margin-top: 4rem;
     padding-bottom: 3rem;
 }
 
 .projects{
     width: 95%;
+    display: block;
+    margin-top: 0px;
+}
+
+.projectpage img{
+    margin-top: 0px;
+    margin-bottom: 1rem;
 }
 
 .pject:hover {
@@ -73,7 +85,11 @@ p{
   filter: saturate(1);
 }
 
-
+.normal{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 1rem;
+}
 
 
 }

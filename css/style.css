@@ -155,10 +155,24 @@ h6{
 }
 
 .projects{
-  width: 80%;
+  width: 100%;
   margin: 3% auto;
   transition: opacity 1s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.projectpage{
+  width: 90%;
+}
+
+#all{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
 
 .projectpage img{
 width: 100%;
@@ -168,11 +182,11 @@ width: 100%;
 }
 
 .normal{
-  width: 100%;
+  width: 30%;
   height: fit-content;
-  margin-top: 1rem;
   opacity: 1;
-
+margin: .5rem;
+min-width: 275px;
 }
 
 .pject{
@@ -185,7 +199,7 @@ width: 100%;
 }
 
 .pject:hover {
-  opacity: .6;
+  opacity: .7;
   filter: saturate(1.2);
 }
 
@@ -310,6 +324,18 @@ background-image: linear-gradient(to bottom, rgb(232, 231, 226), rgb(0,0,0,0));
 
 #revbg{
   background-image: url(../images/work/revelation/revbg.jpg);
+}
+
+#tribg{
+  background-image: url(../images/work/triune/triunebg.jpg);
+}
+
+#porbg{
+  background-image: url(../images/work/portraits/portraitsbg.jpg);
+}
+
+#diabg{
+  background-image: url(../images/work/dia/diabg.jpg);
 }
 
 .arrow{
