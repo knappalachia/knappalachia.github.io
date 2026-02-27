@@ -208,8 +208,7 @@ min-width: 275px;
 
 #logo{
     width: 100%;
-    opacity: .1;
-    mix-blend-mode: exclusion;
+    opacity: .6;
 }
 
 #whale{
