@@ -1,0 +1,93 @@
+
+@media only screen and (max-width: 1400px) {
+
+    p{
+        width: 97%;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    h1{
+        width: 100%;
+        line-height: 2rem;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    #header h2{
+        text-align: left;
+        line-height: 4rem;
+    }
+
+    h4{
+        margin-top: 2rem;
+    }
+
+    p{
+        width: 97%;
+    }
+
+    #infobox{
+        padding-left: 2rem;
+    }
+
+
+    #header{
+        display: block;
+        height: 8rem;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+.home{
+    margin-top: 8rem;
+}
+
+    .cell{
+        width: 100vw;
+        height: 75vh;
+        background-size: 100vw auto;
+
+    }
+
+    .desktop{
+        display: none;
+    }
+
+.project:hover{
+  background-size: 100vw auto;
+  cursor: pointer;
+}
+
+.twocell{  
+    width: 100vw;
+    height: auto;
+            background-size: 100vw auto;
+
+}
+
+.threecell{
+    width: 100vw;
+    height: auto;
+}
+
+.description{
+    position: static;
+        margin-top: 10rem;
+
+}
+
+#portrait{
+    height: 50vh;
+}
+
+}
+
+

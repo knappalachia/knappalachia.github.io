@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+html{
+    background-color: rgb(46, 46, 46);
+}
+
+#header{
+  display: flex;
+  width: 100vw;
+      background-color: rgb(25, 25, 25);
+      position: fixed;
+top: 0;
+height: 4rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h1{
+  font-family: "Cormorant", serif;
+ font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 1.7rem;
+  line-height: 4rem;
+  text-align: left;
+  padding-left: 2rem;
+  width: calc((100vw / 3) - 2rem);
+}
+
+#header h2{
+  font-family: "Cormorant", serif;
+ font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  line-height: 4rem;
+  text-align: right;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+
+h2{
+  font-family: "Cormorant", serif;
+ font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+h3{
+  font-family: "Cormorant", serif;
+ font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 1.7rem;
+  padding-left: .2rem;
+}
+
+.space{
+  margin-top: 4rem;
+}
+
+h4{
+  font-family: "Montserrat", serif;
+ font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: .7rem;
+  margin-top: 6rem;
+  padding-left: .2rem;
+  letter-spacing: .1rem;
+}
+
+p{
+  font-family: "Montserrat", serif;
+ font-optical-sizing: auto;
+ font-size: 1rem;
+ line-height: 1.8rem;
+ width: 70%;
+  font-weight: 400;
+  margin-top: 3rem;
+  color: white;
+  padding-left: .2rem;
+}
+
+#infobox{
+  display: flex;
+  margin-left: auto;
+}
+
+.centeredimg{
+  margin: .5rem auto;
+  width: 3rem;
+}
+
+
+.main{
+  display: flex;
+  margin-top: 4rem;
+}
+
+.cell{
+  width: 20vw;
+  height: calc(100vh - 4rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto calc(100vh - 4rem);
+}
+
+
+.twocell{
+  width: 40vw;
+     height: calc(100vh - 4rem);
+
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto calc(100vh - 4rem);
+}
+
+.description{
+  position: fixed;
+  left: 60vw;
+}
+
+.threecell{
+  width: 60vw;
+ 
+}
+
+
+.threecell img{
+  width: 100%;
+}
+
+.textbox{
+  margin: 3rem;
+}
+
+#portrait{
+    background-image: url(../images/portrait.jpg);
+
+}
+
+#cruce{
+  background-image: url(../images/work/excruce.jpg);
+}
+
+#credo{
+ background-image: url(../images/work/credo.png);
+}
+
+#dia{
+ background-image: url(../images/work/diatessaron.png);
+}
+
+#triune{
+ background-image: url(../images/work/triune.jpg);
+}
+
+#rev{
+   background-image: url(../images/work/revelation.jpg);
+
+}
+
+.project:hover{
+  background-size: auto 120%;
+  cursor: pointer;
+}
+
+.desktop{
+  display: block;
+}
