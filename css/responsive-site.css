@@ -81,6 +81,7 @@
 .description{
     position: static;
         margin-top: 10rem;
+        overflow: hidden;
 
 }
 
