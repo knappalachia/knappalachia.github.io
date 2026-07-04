@@ -98,11 +98,6 @@ p{
   margin-left: auto;
 }
 
-.centeredimg{
-  margin: .5rem auto;
-  width: 3rem;
-}
-
 
 .main{
   display: flex;
@@ -130,6 +125,7 @@ p{
 .description{
   position: fixed;
   left: 60vw;
+  overflow: scroll;
 }
 
 .threecell{
