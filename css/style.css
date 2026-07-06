@@ -110,7 +110,7 @@ p{
   height: calc(100vh - 4rem);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto calc(100vh - 4rem);
 }
 
 
@@ -170,7 +170,7 @@ p{
 }
 
 .project:hover{
-  background-size: auto 120%;
+  background-size: auto calc(112vh);
   cursor: pointer;
 }
 
