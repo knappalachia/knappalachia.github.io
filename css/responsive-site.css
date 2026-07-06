@@ -9,6 +9,8 @@
 
 @media only screen and (max-width: 850px) {
 
+   
+
     h1{
         width: 100%;
         line-height: 2rem;
@@ -53,7 +55,7 @@
     .cell{
         width: 100vw;
         height: 75vh;
-        background-size: 100vw auto;
+        background-size: cover;
 
     }
 

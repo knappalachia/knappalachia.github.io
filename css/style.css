@@ -2,6 +2,7 @@
 
 html{
     background-color: rgb(46, 46, 46);
+    overflow-x: hidden;
 }
 
 #header{
@@ -109,7 +110,7 @@ p{
   height: calc(100vh - 4rem);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto calc(100vh - 4rem);
+  background-size: cover;
 }
 
 
@@ -125,7 +126,7 @@ p{
 .description{
   position: fixed;
   left: 60vw;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .threecell{
