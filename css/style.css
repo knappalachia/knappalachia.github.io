@@ -106,7 +106,7 @@ p{
 }
 
 .cell{
-  width: 20vw;
+  width: 16.67vw;
   height: calc(100vh - 4rem);
   background-position: center;
   background-repeat: no-repeat;
@@ -146,6 +146,10 @@ p{
 #portrait{
     background-image: url(../images/portrait.jpg);
 
+}
+
+#confess{
+  background-image: url(../images/work/confess.jpg);
 }
 
 #cruce{
